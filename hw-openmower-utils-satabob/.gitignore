@@ -1,0 +1,5 @@
+components/extern/tmp
+*kicad_*.lck
+release/
+*.kicad_pro-bak
+*-backups/
