@@ -34,12 +34,12 @@ jobs:
       - uses: INTI-CMNB/KiBot@v2_k8
         with:
           config: "hw-openmower-utils-satabob/.kibot.yaml"
-          board: "${{ env.BOARD_NAME }}.kicad_pcb"
+          board: "hw-openmower-utils-satabob.kicad_pcb"
           verbose: 1
       - uses: actions/upload-artifact@v4
         with:
           name: "${{ env.BOARD_NAME }}-${{ github.ref_name }}"  # Use the tag as the artifact name
-          path: hw-openmower-utils-satabob/release
+          path: release
 
   tagged-release:
     runs-on: ubuntu-latest
@@ -53,17 +53,17 @@ jobs:
       - uses: INTI-CMNB/KiBot@v2_k8
         with:
           config: "hw-openmower-utils-satabob/.kibot.yaml"
-          board: "${{ env.BOARD_NAME }}.kicad_pcb"
+          board: "hw-openmower-utils-satabob.kicad_pcb"
 
-      - name: 'Fix permissions on hw-openmower-utils-satabob/release/'
-        run: sudo chmod 0777 hw-openmower-utils-satabob/release
+      - name: 'Fix permissions on release/'
+        run: sudo chmod 0777 release
       # Zip the release directory and include the tag (version) in the filename
       - name: Compress release directory into a versioned ZIP file
-        run: zip -r "release-${{ env.BOARD_NAME }}-${GITHUB_REF_NAME}.zip" hw-openmower-utils-satabob/release/*
+        run: zip -r "release-${{ env.BOARD_NAME }}-${GITHUB_REF_NAME}.zip" release/*
       - uses: actions/upload-artifact@v4
         with:
           name: "release-${{ env.BOARD_NAME }}-${{ github.ref_name }}-hw-openmower-utils-satabob"  # Use the tag as the artifact name
-          path: hw-openmower-utils-satabob/release
+          path: release
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
