@@ -33,7 +33,7 @@ jobs:
           fetch-depth: 0
       - uses: INTI-CMNB/KiBot@v2_k8
         with:
-          config: ".kibot.yaml"
+          config: "hw-openmower-utils-satabob/.kibot.yaml"
           board: "${{ env.BOARD_NAME }}.kicad_pcb"
           verbose: 1
       - uses: actions/upload-artifact@v4
@@ -52,7 +52,7 @@ jobs:
 
       - uses: INTI-CMNB/KiBot@v2_k8
         with:
-          config: ".kibot.yaml"
+          config: "hw-openmower-utils-satabob/.kibot.yaml"
           board: "${{ env.BOARD_NAME }}.kicad_pcb"
 
       - name: 'Fix permissions on hw-openmower-utils-satabob/release/'
