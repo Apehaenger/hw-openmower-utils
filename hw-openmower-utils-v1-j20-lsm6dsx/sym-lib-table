@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "hw-openmower-utils-v1-j20-lsm6ds")(type "KiCad")(uri "${KIPRJMOD}/hw-openmower-utils-v1-j20-lsm6ds.kicad_sym")(options "")(descr ""))
+)
