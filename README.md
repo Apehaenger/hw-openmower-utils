@@ -17,3 +17,10 @@ Pico Breakout Board connected via OpenMower's specific SATA plug</a>
 <img src="./hw-openmower-utils-v1-j20-lsm6dsx/hw-openmower-utils-v1-j20-lsm6ds.jpg" width="49%" align="left"/>
 LSM6DSx IMU alternative for J20 @ OpenMower V1 (instead of MPU9250 or WT901)</a>
 <br clear="left"/>
+
+### Arduino/UM9x Shield for V1 Hardware
+
+<a href="./hw-openmower-utils-v1-arduino-uno-um9x/">
+<img src="./hw-openmower-utils-v1-arduino-uno-um9x/hw-openmower-utils-v1-arduino-uno-um9x.jpg" width="49%" align="left"/>
+Simple UM9x GNSS module mount shield for OpenMower V1</a>
+<br clear="left"/>
