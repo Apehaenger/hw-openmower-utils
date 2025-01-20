@@ -4,10 +4,14 @@
 # Untrack production files
 hw-openmower-utils-v1-j20-lsm6dsx/fabrication-toolkit-options.json
 hw-openmower-utils-v1-j20-lsm6dsx/[P|p]roduction/*
+hw-openmower-utils-v1-arduino-uno-um9x/[P|p]roduction/*
 
 # Untrack backup files
 hw-openmower-utils-v1-j20-lsm6dsx/hw-openmower-utils-v1-j20-lsm6ds-backups/*
 hw-openmower-utils-v1-j20-lsm6dsx/hw-openmower-utils-v1-j20-lsm6ds.bak
+hw-openmower-utils-v1-arduino-uno-um9x/hw-openmower-utils-v1-arduino-uno-um9x-backups/*
+hw-openmower-utils-v1-arduino-uno-um9x/hw-openmower-utils-v1-arduino-uno-um9x.bak
 
 # Untrack cache files
 hw-openmower-utils-v1-j20-lsm6dsx/fp-info-cache
+hw-openmower-utils-v1-arduino-uno-um9x/fp-info-cache

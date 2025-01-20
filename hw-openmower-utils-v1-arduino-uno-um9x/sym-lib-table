@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "hw-openmower-utils-v1-arduino-uno-um9x")(type "KiCad")(uri "${KIPRJMOD}/hw-openmower-utils-v1-arduino-uno-um9x.kicad_sym")(options "")(descr ""))
+)
